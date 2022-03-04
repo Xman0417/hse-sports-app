@@ -1,12 +1,14 @@
-
-
+import { Container } from "react-bootstrap";
+import React from "react";
+import NavBar from "./NavBar";
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
+      <NavBar />
       <header className="App-header">
         <h1>HSE Sports App</h1>
       </header>
-    </div>
+    </Container>
   );
 }
 
