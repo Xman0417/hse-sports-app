@@ -14,6 +14,7 @@ function NavBar(){
                     <Nav.Link href="#">Home</Nav.Link>
                     <Nav.Link href="#">Features</Nav.Link>
                     <Nav.Link href="#">Pricing</Nav.Link>
+                    <Nav.Link href="https://www.hsenews.com/live-stream/">Watch Now</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
