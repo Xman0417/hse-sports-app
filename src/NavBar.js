@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import { Container } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
+import scoreboardLogo  from './icons/scoreboard.svg'
 //https://react-bootstrap.github.io/getting-started/introduction/
 
-
+//Image link is temp for testing -- add new logo nav
 function NavBar(){
     return(
+        <>
         <Navbar bg="primary" variant="dark">
             <Container>
                 <Navbar.Brand href="#">Navbar</Navbar.Brand>
@@ -18,7 +20,9 @@ function NavBar(){
                 </Nav>
             </Container>
         </Navbar>
-    
+        
+        <img src= {scoreboardLogo} alt="scoreboard image" style = {{width: "250px"}}/>
+        </>
     );
 }
 
