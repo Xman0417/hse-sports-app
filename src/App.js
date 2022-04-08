@@ -1,8 +1,12 @@
 import { Container } from "react-bootstrap";
-import React from "react";
+import { useState, React } from "react";
 import NavButtons from "./NavButtons";
-import Scores from "./Scores.js";
+
+import MainContent from "./MainContent";
+
 function App() {
+  const [screen, setScreen] = useState(1);
+
   return (
     <Container className="App">
       
@@ -10,9 +14,9 @@ function App() {
         <h1>HSE Sports App</h1>
       </header>
       <div>
-        <Scores />
+        <MainContent screen = {screen}/>
       </div>
-      <NavButtons />
+      <NavButtons setScreen = {setScreen} />
     </Container>
   );
 }
