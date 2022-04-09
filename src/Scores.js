@@ -1,16 +1,22 @@
-//bug - script doesnt reload after switching.
-
 import useScript from "./hooks/useScript";
 
 function Scores(){
-    /*const status = */useScript('https://scorestream.com/apiJsCdn/widgets/embed.js');
+    useScript('https://scorestream.com/apiJsCdn/widgets/embed.js');
+    var insertedScript = document.getElementById("scorestream-vertScoreboard");
+    console.log (insertedScript);
+    if(insertedScript !== null){
+        document.getElementsByTagName('head')[0].removeChild(insertedScript);
+        insertedScript = null;
+    }
     return(
         
         <div>
             
             <h2>Scores</h2>
+            
             <div className="scorestream-widget-container" data-ss_widget_type="vertScoreboard" style={{height:"600px"}} data-user-widget-id="49107"></div>
             <p>NOTE: This may not be the most updated - please check the TWEETS section for the most up to date information.</p>
+
         </div>
     );
     

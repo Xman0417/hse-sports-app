@@ -27,7 +27,7 @@ function NavButtons(props){
             <Nav className="justify-content-center">
                 
                 <Nav.Item><Button variant="outline-primary" onClick={handleNews}><img src= {newsLogo} alt="news" style = {{width: "50px"}}/></Button></Nav.Item>
-                <Nav.Item><Button variant="outline-primary" onClick={handleTweets}><img src= {newsLogo} alt="news" style = {{width: "50px"}}/></Button></Nav.Item>
+                <Nav.Item><Button variant="outline-primary" onClick={handleTweets}><img src= {twitterLogo} alt="news" style = {{width: "50px"}}/></Button></Nav.Item>
                 <Nav.Item><Button variant="outline-primary" onClick={handleScores}><img src= {scoreboardLogo} alt="scores" style = {{width: "50px"}}/></Button></Nav.Item>
                 <Nav.Item><Button variant="outline-primary" onClick={handleLive}><img src= {playLogo} alt="livestream" style = {{width: "50px"}}/></Button></Nav.Item>
             </Nav>

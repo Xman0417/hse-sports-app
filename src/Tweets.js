@@ -3,6 +3,7 @@ import useScript from "./hooks/useScript";
 
 function Tweets(){
     useScript('https://platform.twitter.com/widgets.js');
+    
     return(
         <div>
            

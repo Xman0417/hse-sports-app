@@ -14,7 +14,7 @@ function MainContent(props){
         );
     }else{
         return(
-            <></>
+            <p>This should not appear.</p>
         );
     }
     

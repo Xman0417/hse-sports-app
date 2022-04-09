@@ -10,10 +10,10 @@ const useScript = url => {
     script.async = true;
     script.type= "text/javascript";
     script.charset="utf-8";
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
     }
   }, [url]);
 };
