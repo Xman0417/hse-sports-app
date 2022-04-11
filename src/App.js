@@ -9,9 +9,8 @@ function App() {
 
   return (
     <Container className="App">
-      
       <header className="App-header">
-        <h1>HSE Sports App</h1>
+        <h1 style ={{textAlign: "center"}}>HSE Sports App</h1>
       </header>
       <div>
         <MainContent screen = {screen}/>

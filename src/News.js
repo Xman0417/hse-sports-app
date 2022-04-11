@@ -1,3 +1,5 @@
+import { useScript } from "usehooks-ts";
+
 function News(){
 
     return(
