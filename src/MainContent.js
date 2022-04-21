@@ -1,4 +1,5 @@
 import React from "react";
+import News from "./News";
 import Scores from "./Scores";
 import Tweets from "./Tweets";
 
