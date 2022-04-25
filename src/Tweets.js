@@ -7,11 +7,13 @@ function Tweets(){
     return(
         <div>
            
-            <h2>Tweets</h2>
-            <a className="twitter-timeline" data-width="700" data-height="400" href="https://twitter.com/HSEAthletics?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+            
+            <a className="twitter-timeline" data-width="700" data-height="480" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">HSE Sports Twitter List</a>
             
         </div>
     );
     
 }
 export default Tweets;
+
+//<a class="twitter-timeline" href="https://twitter.com/xman0417/lists/1512592955579768836?ref_src=twsrc%5Etfw">A Twitter List by xman0417</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

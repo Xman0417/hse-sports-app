@@ -9,7 +9,7 @@ const useScript = url => {
     script.src = url;
     script.async = true;
     script.type= "text/javascript";
-    script.charset="utf-8";
+    
     document.head.appendChild(script);
 
     return () => {
