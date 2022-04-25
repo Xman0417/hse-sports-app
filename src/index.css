@@ -1,4 +1,4 @@
-import neon-colors
+
 
 
 body {
@@ -9,7 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-image: url("https://images.app.goo.gl/TiXZygMXzwRnPGc39");
-  font-style: oblique;
+  
   
 }
