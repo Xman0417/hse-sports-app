@@ -13,6 +13,10 @@ function MainContent(props){
         return(
             <Tweets />
         );
+    }else if (props.screen === 3){
+        return(
+            <News />
+        );
     }else{
         return(
             <p>This should not appear.</p>

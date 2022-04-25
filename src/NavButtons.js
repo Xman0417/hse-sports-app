@@ -17,7 +17,7 @@ function NavButtons(props){
         props.setScreen(2);
     }
     const handleNews = () => {
-        window.open("https://hseroyalsathletics.com");
+        props.setScreen(3);
     }
     const handleLive = () => {
         window.open("https://www.hsenews.com/live-stream/");
