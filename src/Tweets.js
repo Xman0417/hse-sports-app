@@ -5,10 +5,10 @@ function Tweets(){
     useScript('https://platform.twitter.com/widgets.js');
     
     return(
-        <div>
+        <div style={{display: "flex", justifyContent: "center"}}>
            
             
-            <a className="twitter-timeline" data-width="600" data-height="480" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">HSE Sports Twitter List</a>
+            <a className="twitter-timeline" data-width="700" data-height="480" data-chrome="nofooter" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">HSE Sports Twitter List</a>
             
         </div>
     );

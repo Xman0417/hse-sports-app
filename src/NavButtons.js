@@ -24,12 +24,12 @@ function NavButtons(props){
     };
     return(
         <div>
-            <Nav className="justify-content-center">
+            <Nav className="justify-content-center" style={{ position: 'fixed', bottom: '30px', left: '0px', right: '0px', marginTop: "20px", zIndex: "1"}}>
                 
-                <Nav.Item><Button variant="outline-primary" onClick={handleNews}><img src= {newsLogo} alt="news" style = {{width: "50px"}}/></Button></Nav.Item>
-                <Nav.Item><Button variant="outline-primary" onClick={handleTweets}><img src= {twitterLogo} alt="news" style = {{width: "50px"}}/></Button></Nav.Item>
-                <Nav.Item><Button variant="outline-primary" onClick={handleScores}><img src= {scoreboardLogo} alt="scores" style = {{width: "50px"}}/></Button></Nav.Item>
-                <Nav.Item><Button variant="outline-primary" onClick={handleLive}><img src= {playLogo} alt="livestream" style = {{width: "50px"}}/></Button></Nav.Item>
+                <Button variant="outline-primary" onClick={handleNews}><img src= {newsLogo} alt="news" style = {{width: "50px"}}/></Button>
+                <Button variant="outline-primary" onClick={handleTweets}><img src= {twitterLogo} alt="news" style = {{width: "50px"}}/></Button>
+                <Button variant="outline-primary" onClick={handleScores}><img src= {scoreboardLogo} alt="scores" style = {{width: "50px"}}/></Button>
+                <Button variant="outline-primary" onClick={handleLive}><img src= {playLogo} alt="livestream" style = {{width: "50px"}}/></Button>
             </Nav>
         </div>
     );
