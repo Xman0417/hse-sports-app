@@ -1,4 +1,5 @@
 import React from "react";
+import Credits from "./Credits";
 import News from "./News";
 import Scores from "./Scores";
 import Tweets from "./Tweets";
@@ -16,6 +17,10 @@ function MainContent(props){
     }else if (props.screen === 3){
         return(
             <News />
+        );
+    }else if(props.screen === 4){
+        return(
+            <Credits />
         );
     }else{
         return(

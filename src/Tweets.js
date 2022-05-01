@@ -3,15 +3,17 @@ import useScript from "./hooks/useScript";
 
 function Tweets(){
     useScript('https://platform.twitter.com/widgets.js');
-    const fullList = "https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw"
+    
     return(
-        <div style={{display: "flex", justifyContent: "center"}}>
+        <div style={{textAlign:"center"}}>
            
-            
-            <a className="twitter-timeline" data-width="700" data-height="480" data-chrome="nofooter" href={fullList}>Loading...</a>
-            
+            <h1 style={{fontSize: "40px"}}>Latest Tweets from HSE Sports</h1>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <a className="twitter-timeline" data-width="60vw" data-height="68vh" data-chrome="nofooter noheader" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">Loading...</a>
+            </div>
         </div>
     );
     
+
 }
 export default Tweets;
