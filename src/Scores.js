@@ -12,7 +12,7 @@ function Scores(){
         <div>
             
             <div className="scorestream-widget-container" data-ss_widget_type="vertScoreboard" style={{height:"70vh"}} data-user-widget-id="49107"></div>
-            <p style={{fontSize:"10pt"}}>NOTE: This may not be the most updated - please check the TWEETS section for the most up to date information.</p>
+            <p style={{fontSize:"8pt"}}>NOTE: This may not be the most updated - please check the TWEETS section for the most up to date information.</p>
 
         </div>
     );
