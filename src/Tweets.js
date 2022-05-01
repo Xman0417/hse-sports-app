@@ -1,15 +1,21 @@
-
+import useMedia from "./hooks/useMedia";
 import useScript from "./hooks/useScript";
 
 function Tweets(){
+    const isMobile = useMedia(['(min-width: 750px)', '(max-width: 750px)'], [false, true]);
     useScript('https://platform.twitter.com/widgets.js');
-    
+    var twHeight;
+    if(isMobile){
+        twHeight = "60vh"
+    }else{
+        twHeight = "70vh"
+    }
     return(
         <div style={{textAlign:"center"}}>
            
             <h1 style={{fontSize: "40px"}}>Latest Tweets from HSE Sports</h1>
             <div style={{display: "flex", justifyContent: "center"}}>
-                <a className="twitter-timeline" data-width="65vw" data-height="60vh" data-chrome="nofooter noheader" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">Loading...</a>
+                <a className="twitter-timeline" data-width="65vw" data-height={twHeight} data-chrome="nofooter noheader" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">Loading...</a>
             </div>
         </div>
     );
