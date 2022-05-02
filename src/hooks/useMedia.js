@@ -1,6 +1,5 @@
-//Hook from https://usehooks.com/useMedia/. Helps with Mobile Responsive Design through Media Queries.
-
 import {useState, useEffect} from 'react'
+
 
 function useMedia(queries, values, defaultValue) {
     // Array containing a media query list for each query
@@ -27,6 +26,7 @@ function useMedia(queries, values, defaultValue) {
         mediaQueryLists.forEach(mql => mql.addListener(handler));
         // Remove listeners on cleanup
         return () => mediaQueryLists.forEach(mql => mql.removeListener(handler));
+
       },
       [] // Empty array ensures effect is only run on mount and unmount
     );
