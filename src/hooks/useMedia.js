@@ -1,6 +1,6 @@
 //Hook from https://usehooks.com/useMedia/. Helps with Mobile Responsive Design through Media Queries.
 
-import React, {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react'
 
 function useMedia(queries, values, defaultValue) {
     // Array containing a media query list for each query
