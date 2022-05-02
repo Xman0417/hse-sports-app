@@ -32,7 +32,7 @@ function Tweets(){
                 {/*The anchor tag that holds the twitter widget.
                  The two tags in data-chrome remove the header and the footer of the widget. 
                  data-width and data-height set the height and width of the widget.*/}
-                <a className="twitter-timeline" data-width="70vw" data-height={twHeight} data-chrome="nofooter noheader" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">Loading...</a>
+                <a className="twitter-timeline" data-width="80vw" data-height={twHeight} data-chrome="nofooter noheader" href="https://twitter.com/hsesportsapp/lists/1517144091179450368?ref_src=twsrc%5Etfw">Loading...</a>
             </div>
         </div>
     );
