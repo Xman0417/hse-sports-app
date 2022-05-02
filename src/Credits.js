@@ -1,5 +1,7 @@
-//This function displays the Credits page.
+//This component displays the Credits page.
 //It appears when the last button on the bottom row is clicked - the one with the icon of people on it.
+//However, the way that this appears is through MainContent.js. Thus, this component is mostly just HTML
+//and CSS.
 
 function Credits(){
 
