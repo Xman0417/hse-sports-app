@@ -25,12 +25,10 @@ function Tweets(){
     //replaced with the formula to calculate vh by taking in the default JS values for inner height, 
     //multiplying it by .7, and then converted that to pixels. 
     let twHeight;
-
     if(isMobile){
-        twHeight = "60vh"
+        twHeight = window.innerHeight*0.60 + "px";
     }else{
         twHeight = window.innerHeight*0.72 + "px";
-        //twHeight = twHeight.toString() + "px"
     }
     return(
         <div style={{textAlign:"center"}}>
