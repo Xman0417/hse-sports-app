@@ -1,11 +1,14 @@
 import React from "react";
-
+//Imports bootstrap components to make life easier
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
+
+//Imports svg files to be placed on top of buttons to denote what each button does.
 import scoreboardLogo  from './icons/scoreboard.svg';
 import newsLogo  from './icons/news.svg';
 import creditsLogo  from './icons/credits.svg';
 import twitterLogo from './icons/twitter.svg';
-import Button from 'react-bootstrap/Button';
+
 //This component has the navigation bar at the bottom of the screen in order to change what
 //is currently being rendered. setScreen is passed in from App.js. By doing this, it allows the 
 //buttons on this nav bar to change the screen when clicked. 
@@ -39,10 +42,12 @@ function NavButtons(props){
             <Nav 
                 className="justify-content-center" 
                 style={{
-                /*Styling that fixes the position of the nav bar to the bottom of the screen in a consistent location */ 
+                /*Styling that fixes the position of the nav bar to the bottom of the screen
+                 in a consistent location */ 
                 position: 'fixed', bottom: '15px', left: '0px', right: '0px', marginTop: "20px", zIndex: "1"}}
             >
-                {/*The Buttons that change the screen. Goes in the order of News, Tweets, Scores, Credits */}
+                {/*The Buttons that change the screen. Goes in the order
+                 of News, Tweets, Scores, Credits from left to right. */}
                 <Button variant="outline-primary" onClick={handleNews}><img src= {newsLogo} alt="news" style = {{width: "6vh", height: "6vh"}}/></Button>
                 <Button variant="outline-primary" onClick={handleTweets}><img src= {twitterLogo} alt="tweets" style = {{width: "6vh", height: "6vh"}}/></Button>
                 <Button variant="outline-primary" onClick={handleScores}><img src= {scoreboardLogo} alt="scores" style = {{width: "6vh", height: "6vh"}}/></Button>

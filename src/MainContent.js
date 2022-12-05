@@ -1,3 +1,4 @@
+//Imports React, as well as all screen components.
 import React from "react";
 import Credits from "./Credits";
 import News from "./News";
@@ -12,6 +13,7 @@ function MainContent(props){
     if(props.screen === 1){
         //IF props.screen - the variable passed in - is 1 - it sets the content to
         //the component in Scores.js
+        
         return(
             <Scores />
         );

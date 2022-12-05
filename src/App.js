@@ -1,3 +1,4 @@
+//Imports the container component from bootstrap, which gives the app some CSS elements by default.
 import { Container } from "react-bootstrap";
 import { useState, React } from "react";
 import NavButtons from "./NavButtons";
@@ -6,13 +7,16 @@ import MainContent from "./MainContent";
 
 function App() {
   //This useState tracks the screen for MainContent.js. The screen is changed in NavButtons.js.
-  //When screen = 1, the component in Scores.js appears
-  //When screen = 2, the component in Tweets.js appears
-  //When screen = 3, the component in News.js appears
-  //When Screen = 4, the component in Credits.js appears
-  //More detail on how this works is found in MainContent.js and NavButtons.js
+  //When screen = 1, the component in Scores.js appears - the default value.
+  //When screen = 2, the component in Tweets.js appears.
+  //When screen = 3, the component in News.js appears.
+  //When Screen = 4, the component in Credits.js appears.
+  //More detail on how this works is found in MainContent.js and NavButtons.js.
+  //Screen is passed into the MainContent component, setScreen (the function that updates screen)
+  //is passed into the NavButtons component.
   const [screen, setScreen] = useState(1);
 
+  //html that is returned when the App component is called.
   return (
     <Container fluid className="App">
       <header className="App-header" >

@@ -1,6 +1,8 @@
 //This component displays the News Tab. This has links to the SSN Site, their live stream, and
 //the HSE Athletic website. It is triggered by the far left button on the bottom bar. This, however,
 //is done through MainContent.js. This component is mostly just HTML with styling.
+//Left as own component in case something more can be done other than just links in the future 
+//such as an API being available to link to most recent news stories.
 function News(){
 
     return(
